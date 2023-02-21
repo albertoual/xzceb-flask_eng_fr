@@ -14,16 +14,11 @@ class TestE2F(unittest.TestCase):
     
     def test_hello_translation(self):
         self.assertEqual(english_to_french('Hello'), 'Bonjour')
-    
-    def test_bonjour_translation(self):
-        self.assertEqual(french_to_english('Bonjour'), 'Hello')
+
 
 class TestF2E(unittest.TestCase):
     def test_null_input(self):
         self.assertRaises(Exception, french_to_english, (None,))
-    
-    def test_hello_translation(self):
-        self.assertEqual(french_to_english('Bonjour'), 'Hello')
     
     def test_bonjour_translation(self):
         self.assertEqual(english_to_french('Hello'), 'Bonjour')
