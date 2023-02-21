@@ -21,6 +21,6 @@ class TestF2E(unittest.TestCase):
         self.assertRaises(Exception, french_to_english, (None,))
     
     def test_bonjour_translation(self):
-        self.assertEqual(english_to_french('Hello'), 'Bonjour')
+        self.assertEqual(french_to_english('Bonjour'), 'Hello')
 
 unittest.main()
